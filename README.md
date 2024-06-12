@@ -1,7 +1,9 @@
 # IPtrade: an on-chain content ownership tracking platform
 ## driven by IPT, the ownership token
 
- The smart contract **IPtrade** (address) registers, tracks and manages ownership for digital and digitized content. IPtrade logs content in the form of a cryptographic fingerprint to a wallet address on the blockchain. It runs on **IPT** (address), the ownership token. This document introduces IPT together with IPtrade. Developments will be published on [github](github.com/mmrmas/IPT)
+## CURRENTLY in BETA VERSION ON THE SEPOLIA TESTNET
+
+ The smart contract **IPtrade** (address) registers, tracks and manages ownership for digital and digitized content. IPtrade logs content in the form of a cryptographic fingerprint to a wallet address on the blockchain. It runs on **IPT** (address), the ownership token. This document introduces IPT together with IPtrade. Developments will be published on [github](https://github.com/mmrmas/mmrmas.github.io)
 
 ## TL;DR
 - IPtrade registers SHA-512 hashes under ERC20 compatible wallet addresses. 
@@ -186,4 +188,4 @@ IPtrade.connect(BUYER-ADDRESS).buyerBuysIP(SHA-512,TRANSFER-PRICE-IPT);
 
 
 ## Support
-Updates and queries can be posted on the [github account] (www.github.com/mmrmas/IPT)
+Updates and queries can be posted on the [github account] (https://github.com/mmrmas/mmrmas.github.io)
