@@ -3,7 +3,7 @@
 
 ## CURRENTLY in BETA VERSION ON THE SEPOLIA TESTNET
 
- The smart contract **IPtrade** (address) registers, tracks and manages ownership for digital and digitized content. IPtrade logs content in the form of a cryptographic fingerprint to a wallet address on the blockchain. It runs on **IPT** (address), the ownership token. This document introduces IPT together with IPtrade. Developments will be published on [github](https://github.com/mmrmas/mmrmas.github.io)
+ The smart contract **IPtrade** (address) registers, tracks and manages ownership for digital and digitized content. IPtrade logs content in the form of a cryptographic fingerprint to a wallet address on the blockchain. It runs on **IPT** (address), the ownership token. This document introduces IPT together with IPtrade. Developments will be published on [github](https://github.com/mmrmas/mmrmas.github.io) and can be approached through [web3](https://ipt.squaredant.com/index.html)
 
 ## TL;DR
 - IPtrade registers SHA-512 hashes under ERC20 compatible wallet addresses. 
