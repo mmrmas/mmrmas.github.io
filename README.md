@@ -22,7 +22,6 @@ When these two questions cannot be answered affirmatively, there is a chance tha
 
 IPtrade is designed to safeguard these important security aspects of data transfer and ownership. It allows any content provider to log the SHA-512 hash of their document on-chain. When this hash has been logged, everyone can verify the registration and the address. Whoever receives a document can check if this content has indeed been logged under the address of the original owner / creator. 
 
-
 ## Use-cases
 Validation of a received document is the simplest use-case of IPtrade. This can be helpful in the context of communicating important information, where the sender sees a need for the receiver to verify the origin of the document. Examples are: medical information, financial documents, signed contracts, graduation documents, digital IDs.
 
@@ -64,6 +63,7 @@ Ownership transfer can be achieved, after logging the SHA-512, as follows:
 - Log SHA-512 hashes of documents that are not intended to modify, such as pdf files, zip/tar archives, images.
 - Keep IPtrade-logged files in a dedicated archive, preferably write-protected.
 - Share with care. Log your valuable original creations and innovartions before you distribute content to others. Logging can be done in any stage of the creative process.
+- Make the wallet address that you use for IPtrade registrations public, so that an ownership address can be easily linked to the correct individual or organization.
 
 ## What to do when the SHA-512 hash cannot be validated, or the registration address is incorrect
 - The SHA-512 hash is a digital fingerprint of a document. Any change in the document will change the hash value. If the hash cannot be validated on IPtrade, then the received document is different from the logged one. Ask if the original owner sends you the original document. They should be able to provide it, otherwise someone else is claiming to be the sender; and that is exactly what the original sender wanted to protect you against.
@@ -76,7 +76,6 @@ Ownership transfer can be achieved, after logging the SHA-512, as follows:
 
 ## Challenges of the hash registration approach
 - There is no limit on changing ownership. Those who take over ownership via IPtrade should always validate that the first registered address belongs to the original content creator.
-
 
 ## Project key characteristics
 
@@ -96,7 +95,6 @@ Ownership transfer can be achieved, after logging the SHA-512, as follows:
 	- Support IPtrade's normalization and develop expert support. 
 	- Stimulate communities to intensify ownership registration and management.
 	- Drive IPT to new directions related to intellectual property and proof of knowledge.
-
 
 ### IPtrade
 1. IPTrade is owned by (address).
@@ -188,4 +186,4 @@ IPtrade.connect(BUYER-ADDRESS).buyerBuysIP(SHA-512,TRANSFER-PRICE-IPT);
 
 
 ## Support
-Updates and queries can be posted on the [github account] (https://github.com/mmrmas/mmrmas.github.io)
+Updates and queries can be posted on the [github account](https://github.com/mmrmas/mmrmas.github.io)
