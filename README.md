@@ -28,17 +28,17 @@ Validation of a received document is the simplest use-case of IPtrade. This can 
 Validation can be achieved as follows:
 
 -  Holders of IPT can register the SHA-512 hash of a document under a wallet address that belongs to them. 
-	-  When a SHA-512 hash is registered in the blockchain under the user's wallet address, it proofs that the owner has access to a document that can produce this hash.
+	-  A SHA-512 hash that is registered in the blockchain under the user's wallet address serves as proof that the owner has access to a document that can produce this hash.
 	- It is recommended to embed the registration address inside the document, as an additional layer of proof that the first registration of the document took place on the logged address.
 - The workflow is as follows:
 	1. create a document (if possible, including the registration address inside the document)
-	2. create a SHA-512 hash
-	3. log this hash value under the owner address
+	2. create a SHA-512 hash with this document
+	3. log this hash value under your wallet address
 	4. send the document to the client
 	5. the client creates a SHA-512 hash from the document
 	6. the client verifies that the SHA-512 hash was registered on the address of the owner. 
 
-A second use-case is the creation of content, followed by a transfer. This way, a creator secures the arrival of their original content, and subsequently transfers the ownership to the receiver. This can be applied when creating original artistic works, where an artist can establish traceability and the client can certify the origin of the work; tracing and trading of digitized products such as art and jewelry; IP management of innovations and discoveries, such as software code and genomic sequences.
+A second use-case is the creation of content, followed by ownership transfer. This way, a creator secures the arrival of their original content, and subsequently transfers the ownership to the receiver. This can be applied when creating original artistic works, where an artist can establish traceability and the client can certify the origin of the work; tracing and trading of digitized products such as art and graphic design; IP management of innovations and discoveries, such as software code and genomic sequences.
 
 Ownership transfer can be achieved, after logging the SHA-512, as follows:
 
@@ -60,19 +60,19 @@ Ownership transfer can be achieved, after logging the SHA-512, as follows:
  
 
 ## Best practices 
-- Log SHA-512 hashes of documents that are not intended to modify, such as pdf files, zip/tar archives, images.
+- Log SHA-512 hashes of documents that are not intended to modify, such as pdf files, zip/tar archives, images. 
 - Keep IPtrade-logged files in a dedicated archive, preferably write-protected.
 - Share with care. Log your valuable original creations and innovartions before you distribute content to others. Logging can be done in any stage of the creative process.
 - Make the wallet address that you use for IPtrade registrations public, so that an ownership address can be easily linked to the correct individual or organization.
 
 ## What to do when the SHA-512 hash cannot be validated, or the registration address is incorrect
 - The SHA-512 hash is a digital fingerprint of a document. Any change in the document will change the hash value. If the hash cannot be validated on IPtrade, then the received document is different from the logged one. Ask if the original owner sends you the original document. They should be able to provide it, otherwise someone else is claiming to be the sender; and that is exactly what the original sender wanted to protect you against.
-- IPtrade can only link one wallet address to a SHA-512 hash. If the hash of a received document matches an address that does not belong to the original owner, then the original owner should be able to show that they own that address as well. 
-- Wwners should be transparent regarding the address they use to register SHA-512 hashes.
+- IPtrade can only link one wallet address to a certain SHA-512 hash. If the hash of a received document matches an address that does not belong to the original owner, then the original owner should be able to show that they own that address as well. 
+- Owners should be transparent regarding the address they use to register SHA-512 hashes.
 	- Ways to achieve this are:
 		- Including their wallet address inside the shared documents
 		- Publishing their wallet address in the  public domain 
-		- Publishing registered SHA-512 hashes in the public domain, for verification purposes
+		- For tradable items: Publishing registered SHA-512 hashes in the public domain, for verification purposes
 
 ## Challenges of the hash registration approach
 - There is no limit on changing ownership. Those who take over ownership via IPtrade should always validate that the first registered address belongs to the original content creator.
@@ -105,17 +105,17 @@ Ownership transfer can be achieved, after logging the SHA-512, as follows:
 5. Registration prices, transfer prices and free IPT distribution may change in the future, depending on the number of transactions made on IPtrade. There is no implemented logic for this.
 
 
-### IPtrade ownership
+### IPtrade smart contract ownership
 
 - The owner has the following benefits/capacities:
-	- The owner will earn IPT at every IP registration
+	- receive IPT tokens at every IP registration
 	- set a new owner
 	- set the locktime for the faucet and the sales offer expiry period
 	- set the amount of IPT dispensed by the faucet
 	- set prices for IP registration and transfer
 	- withdraw all IPT from the contract
 - The owner cannot do the following:
-	- delete sha-512 registrations of platform users 
+	- delete SHA-512 registrations of platform users 
 
 	
 ## How to connect
@@ -178,9 +178,7 @@ IPtrade.connect(BUYER-ADDRESS).buyerBuysIP(SHA-512,TRANSFER-PRICE-IPT);
 
 ### Useful variables/functions to check prices and ownership
 - registerIPCostIpt()     
-- transferIPCostIpt()      
-- registerIPCostEth()   
-- transferIPCostEth()   
+- transferIPCostIpt()       
 - getIP(SHA-512)
 - getSalesIntent(SHA-512)
 
