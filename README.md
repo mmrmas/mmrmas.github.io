@@ -1,42 +1,42 @@
 # IPtrade: an on-chain content ownership tracking platform
 ## driven by IPT, the ownership token
 
-## CURRENTLY in BETA VERSION ON THE SEPOLIA TESTNET
-
- The smart contract **IPtrade** (address) registers, tracks and manages ownership for digital and digitized content. IPtrade logs content in the form of a cryptographic fingerprint to a wallet address on the blockchain. It runs on **IPT** (address), the ownership token. This document introduces IPT together with IPtrade. Developments will be published on [github](https://github.com/mmrmas/mmrmas.github.io) and can be approached through [web3](https://ipt.squaredant.com/index.html)
+ The smart contract **IPtrade** (address) registers and trades ownership for digital and digitized content. IPtrade registers content in the form of a cryptographic fingerprint to a wallet address on the blockchain. It runs on **IPT** (address), the ownership token. This document introduces IPT together with IPtrade. Developments will be published on [github](https://github.com/mmrmas/mmrmas.github.io) and can be approached through [web3](https://ipt.squaredant.com/index.html)
 
 ## TL;DR
 - IPtrade registers SHA-512 hashes under ERC20 compatible wallet addresses. 
 	- SHA-512 hashes are unique document identifiers. 
 	- See this [wiki page](https://en.wikipedia.org/wiki/SHA-2) for more details (accessed on April 12, 2024)  
-- IPtrade is a marketplace. Content creators can register content and transfer ownership to their clients. 
+- IPtrade is a registration and transfer platform. Content creators can register content and transfer ownership to their clients. 
 - The token that runs IPtrade is IPT (address), the ownership token.
 
 ## Introduction
-Digital content is often sharedin a trust-based manner, where two very important elements are often overlooked:
+Digital content is often shared in a trust-based manner, where two very important elements are often overlooked:
 
 1. is the received document identical to the document that was sent?
-2. does the person who sent the document identify as the original owner of the document?
+2. does the person who has sent the document identify as the original owner of the document?
 
 When these two questions cannot be answered affirmatively, there is a chance that the received document is flawed, and/or the sender impersonates someone else. 
 
-IPtrade is designed to safeguard these important security aspects of data transfer and ownership. It allows any content provider to log the SHA-512 hash of their document on-chain. When this hash has been logged, everyone can verify the registration and the address. Whoever receives a document can check if this content has indeed been logged under the address of the original owner / creator. 
+IPtrade has been designed to safeguard these important integrity aspects of data transfer and ownership. It allows any content provider to log the SHA-512 hash of their document on-chain. When this hash has been logged, everyone can verify this registration and the address. Whoever receives a document can check if this content has indeed been logged under the address of the original owner / creator. 
 
 ## Use-cases
-Validation of a received document is the simplest use-case of IPtrade. This can be helpful in the context of communicating important information, where the sender sees a need for the receiver to verify the origin of the document. Examples are: medical information, financial documents, signed contracts, graduation documents, digital IDs.
+The simplest use-case of IPtrade is the validation of a received document. This can be helpful in the context of communicating important information, where the sender wants to allow the receiver to verify the origin of the document. Examples are: medical information, financial documents, signed contracts, graduation documents, digital IDs.
 
-Validation can be achieved as follows:
+Validation can be achieved when:
 
 -  Holders of IPT can register the SHA-512 hash of a document under a wallet address that belongs to them. 
 	-  A SHA-512 hash that is registered in the blockchain under the user's wallet address serves as proof that the owner has access to a document that can produce this hash.
 	- It is recommended to embed the registration address inside the document, as an additional layer of proof that the first registration of the document took place on the logged address.
-- The workflow is as follows:
-	1. create a document (if possible, including the registration address inside the document)
-	2. create a SHA-512 hash with this document
-	3. log this hash value under your wallet address
-	4. send the document to the client
-	5. the client creates a SHA-512 hash from the document
-	6. the client verifies that the SHA-512 hash was registered on the address of the owner. 
+
+The workflow is as follows:
+
+	1. Create a document (if possible, include the registration address inside the document)
+	2. Create a SHA-512 hash with this document
+	3. Log this hash value under your wallet address
+	4. Send the document to the client
+	5. The client creates a SHA-512 hash from the document
+	6. The client verifies that the SHA-512 hash was registered on the address of the owner. 
 
 A second use-case is the creation of content, followed by ownership transfer. This way, a creator secures the arrival of their original content, and subsequently transfers the ownership to the receiver. This can be applied when creating original artistic works, where an artist can establish traceability and the client can certify the origin of the work; tracing and trading of digitized products such as art and graphic design; IP management of innovations and discoveries, such as software code and genomic sequences.
 
@@ -60,9 +60,9 @@ Ownership transfer can be achieved, after logging the SHA-512, as follows:
  
 
 ## Best practices 
-- Log SHA-512 hashes of documents that are not intended to modify, such as pdf files, zip/tar archives, images. 
+- Register SHA-512 hashes of documents that are not intended to modify, such as pdf files, zip/tar archives, images. 
 - Keep IPtrade-logged files in a dedicated archive, preferably write-protected.
-- Share with care. Log your valuable original creations and innovartions before you distribute content to others. Logging can be done in any stage of the creative process.
+- Share with care. Register your valuable original creations and innovartions before you distribute content to others. This can be done in any stage of the creative process.
 - Make the wallet address that you use for IPtrade registrations public, so that an ownership address can be easily linked to the correct individual or organization.
 
 ## What to do when the SHA-512 hash cannot be validated, or the registration address is incorrect
@@ -72,15 +72,20 @@ Ownership transfer can be achieved, after logging the SHA-512, as follows:
 	- Ways to achieve this are:
 		- Including their wallet address inside the shared documents
 		- Publishing their wallet address in the  public domain 
-		- For tradable items: Publishing registered SHA-512 hashes in the public domain, for verification purposes
+		- Publish non-sensitive documents that have been registered on their address in the public domain
 
 ## Challenges of the hash registration approach
 - There is no limit on changing ownership. Those who take over ownership via IPtrade should always validate that the first registered address belongs to the original content creator.
 
+## A note on patents and trademarks
+Patents and trademarks require originality and therefore the IP related to patent and trademark registrations should not be available in the public domain before such a status has been granted. IPtrade is primarily aimed at content and ownership validation of shared documents; it does and cannot provide patent or trademark status to documents, since such a status is legally provided by regional and international regulations and requirements. 
+The position of blockchain in patent and trademark registration is a developing field and it is therefore unclear if IPtrade-registered hashes can play a role in it. Time-stamped registration of RSHA-512 hashes has the potential to add value in this process, for those who need to provide evidence for the moment of conception of an original idea to get an appliction granted; or for those who try to avoid the exploitation of their own IP by others.  
+
+
 ## Project key characteristics
 
 ### IPT
-1. IPT is a standard, burnable ERC20 token.
+1. IPT is a standard, burnable ERC20 token on address (address).
 2. The capped value is set to 100M and the IPT contract has no owner.
 	- 80M are minted directly.
 	- 20M can be introduced by rewarding miners.
@@ -120,7 +125,7 @@ Ownership transfer can be achieved, after logging the SHA-512, as follows:
 	
 ## How to connect
 
-1.  [The web3 portal](address)
+1.  [The web3 portal](https://ipt.squaredant.com/index.html)
 	- The easiest way to connect via your metamask wallet
 	- At the moment implements the faucet, hash registration, ownership check, and trade
 	- Still to be implemented: check initiated ownership transfers, cancellation of these, and IP deletion.
