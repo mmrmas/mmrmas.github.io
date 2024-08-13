@@ -1,14 +1,14 @@
 # IPtrade: an on-chain content ownership tracking platform
 ## driven by IPT, the ownership token
 
- The smart contract **IPtrade** (address) registers and trades ownership for digital and digitized content. IPtrade registers content in the form of a cryptographic fingerprint to a wallet address on the blockchain. It runs on **IPT** (address), the ownership token. This document introduces IPT together with IPtrade. Developments will be published on [github](https://github.com/mmrmas/mmrmas.github.io) and can be approached through [web3](https://ipt.squaredant.com/index.html)
+ The smart contract **IPtrade** (0x9BadAa81fF2748b44A272D5957CD631E0B4021aA) registers and trades ownership for digital and digitized content. IPtrade registers content in the form of a cryptographic fingerprint to a wallet address on the blockchain. It runs on **IPT** (0xAb6bEda66d62e3fB053767646acb2B3f384dCdC0), the ownership token. This document introduces IPT together with IPtrade. Developments will be published on [github](https://github.com/mmrmas/mmrmas.github.io) and can be approached through [web3](https://ipt.squaredant.com/index.html)
 
 ## TL;DR
 - IPtrade registers SHA-512 hashes under ERC20 compatible wallet addresses. 
 	- SHA-512 hashes are unique document identifiers. 
 	- See this [wiki page](https://en.wikipedia.org/wiki/SHA-2) for more details (accessed on April 12, 2024)  
 - IPtrade is a registration and transfer platform. Content creators can register content and transfer ownership to their clients. 
-- The token that runs IPtrade is IPT (address), the ownership token.
+- The token that runs IPtrade is IPT (0xAb6bEda66d62e3fB053767646acb2B3f384dCdC0), the ownership token.
 
 ## Introduction
 Digital content is often shared in a trust-based manner, where two very important elements are often overlooked:
@@ -85,7 +85,7 @@ The position of blockchain in patent and trademark registration is a developing 
 ## Project key characteristics
 
 ### IPT
-1. IPT is a standard, burnable ERC20 token on address (address).
+1. IPT is a standard, burnable ERC20 token on address 0xAb6bEda66d62e3fB053767646acb2B3f384dCdC0.
 2. The capped value is set to 100M and the IPT contract has no owner.
 	- 80M are minted directly.
 	- 20M can be introduced by rewarding miners.
@@ -102,7 +102,7 @@ The position of blockchain in patent and trademark registration is a developing 
 	- Drive IPT to new directions related to intellectual property and proof of knowledge.
 
 ### IPtrade
-1. IPTrade is owned by (address).
+1. IPTrade (0x9BadAa81fF2748b44A272D5957CD631E0B4021aA) is owned by 0x11FA3c2b0e44F8cbb7d6c09ab970514CD6E1a26D.
 2. The initial IP registration price is 100 IPT. 
 3. The initial IP transfer price is 100 IPT.
 4. The initial IPT to be distributed through the faucet on IPtrade will be 10M
@@ -132,8 +132,8 @@ The position of blockchain in patent and trademark registration is a developing 
 2. Remix
 	- download the contract files from Github and put them in your contracts folder in remix
 	- compile the contracts under the following addresses:
-		- IPT: (address)
-		- IPtrade: (address) 
+		- IPT: 0xAb6bEda66d62e3fB053767646acb2B3f384dCdC0
+		- IPtrade: 0x9BadAa81fF2748b44A272D5957CD631E0B4021aA
 2. Hardhat
 	- download the contract files from Github and put them in your contracts folder in visual studio code
 	- make sure that you have installed Hardhat
