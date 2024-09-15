@@ -79,7 +79,7 @@ A second use-case is the creation of content, followed by ownership transfer. Th
 
 ## A note on patents and trademarks
 Patents and trademarks require originality and therefore the IP related to patent and trademark registrations should not be available in the public domain before such a status has been granted. IPtrade is primarily aimed at content and ownership validation of shared documents; it does and cannot provide patent or trademark status to documents, since such a status is legally provided by regional and international regulations and requirements. 
-The position of blockchain in patent and trademark registration is a developing field and it is therefore unclear if IPtrade-registered hashes can play a role in it. Time-stamped registration of RSHA-512 hashes has the potential to add value in this process, for those who need to provide evidence for the moment of conception of an original idea to get an appliction granted; or for those who try to avoid the exploitation of their own IP by others.  
+The position of blockchain in patent and trademark registration is a developing field and it is therefore unclear if IPtrade-registered hashes can play a role in it. Time-stamped registration of SHA-512 hashes has the potential to add value in this process, for those who need to provide evidence for the moment of conception of an original idea to get an appliction granted; or for those who try to avoid the exploitation of their own IP by others.  
 
 
 ## Project key characteristics
@@ -189,5 +189,5 @@ IPtrade.connect(BUYER-ADDRESS).buyerBuysIP(SHA-512,TRANSFER-PRICE-IPT);
 
 
 ## Contact and Support
-Updates and queries can be posted on the [github account](https://github.com/mmrmas/mmrmas.github.io)  
+Updates and queries can be posted on the [github account](https://github.com/mmrmas/IPT/discussions)  
 You can also reach out via LinkedIn: [LinkedIn](https://www.linkedin.com/in/sam-linsen/)

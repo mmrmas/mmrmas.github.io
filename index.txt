@@ -1,6 +1,6 @@
 1:HL["/_next/static/media/a34f9d1faa5f3315-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 2:HL["/_next/static/css/bac3c57f45056381.css","style",{"crossOrigin":""}]
-0:["VjHRIS4QB3YKz1sgFTjL7",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/bac3c57f45056381.css","precedence":"next","crossOrigin":""}]],"$L4"]]]]
+0:["ExgNFTDFhdI6hzVLU_hUw",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/bac3c57f45056381.css","precedence":"next","crossOrigin":""}]],"$L4"]]]]
 5:HL["/_next/static/css/c7db312cef44e660.css","style",{"crossOrigin":""}]
 6:HL["/_next/static/css/0e8a3d87c2a94f94.css","style",{"crossOrigin":""}]
 7:I[6954,[],""]
