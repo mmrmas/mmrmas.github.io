@@ -1,7 +1,7 @@
 # DigitalOwnership (DO) 
 ## An on-chain content ownership tracking platform
 
- The smart contract **DigitalOwnership** () registers and trades ownership for digital and digitized content. DigitalOwnership registers content in the form of a cryptographic fingerprint to a wallet address on the blockchain. The contract can be approached through [web3](https://digitalownership.squaredant.com/index.html)
+ The smart contract **DigitalOwnership** (0x33Df9e002Ae0cc01a89ab4F08d130d0549F09ffB) registers and trades ownership for digital and digitized content. DigitalOwnership registers content in the form of a cryptographic fingerprint to a wallet address on the blockchain. The contract can be connected through [web3](https://digitalownership.squaredant.com/index.html)
 
 ## TL;DR
 - DigitalOwnership registers SHA-512 hashes under ERC20 compatible wallet addresses. 
@@ -10,15 +10,15 @@
 - DigitalOwnership is a registration and transfer platform. Content creators can register content and transfer ownership to their clients. 
 
 ## Introduction
-DigitalOwnership has been designed to safeguard these important integrity aspects of data transfer and ownership. It allows any content provider to log the SHA-512 hash of their document on-chain. When this hash has been logged, everyone can verify this registration and the address. Whoever receives a document can check if this content has indeed been logged under the address of the original owner / creator. 
+DigitalOwnership allows any content provider to log the SHA-512 hash of their document on-chain. Whoever receives a document can check if this content has indeed been logged under the address of the original owner / creator. 
 
 ## Use-cases
-The simplest use-case of DigitalOwnership is the validation of a received document. This can be helpful in the context of communicating important information, where the sender wants to allow the receiver to verify the origin of the document. Examples are: medical information, financial documents, signed contracts, graduation documents, digital IDs.
+The simplest use-case of DigitalOwnership is the validation of a document. This can be helpful in the context of communicating important information, where the sender wants to allow the receiver to verify the origin of the document. Examples are: medical reports, financial documents, signed contracts, graduation documents, digital IDs.
 
 ### Validation can be achieved when:
 
 - Holders of ETH on the Arbitrum Net can register content. 
-	-  A SHA-512 hash that is registered in the blockchain under the user's wallet address serves as proof that the owner has access to a document that can produce this hash.
+	- A SHA-512 hash that is registered in the blockchain under the user's wallet address serves as proof that the owner has access to a document that can produce this hash.
 	- It is recommended to embed the registration address inside the document, as an additional layer of proof that the first registration of the document took place on the logged address.
 
 ### The workflow is as follows:
@@ -53,33 +53,32 @@ A second use-case is the creation of content, followed by ownership transfer. Th
 
 ## Best practices 
 - Tip: document SHA-512 hashes from documents that are not intended to modify, such as pdf files, zip/tar archives, images. 
-- Tip: Keep DigitalOwnership-logged files in a dedicated archive, preferably write-protected.
-- Tip: Share with care. Register your valuable original creations and innovartions before you distribute content to others. This can be done in any stage of the creative process.
-- Tip: Make the wallet address that you use for DigitalOwnership registrations public, so that an ownership address can be easily linked to the correct individual or organization. And: verify your wallet address trhough Etherscan or related platforms
-
-## What to do when the SHA-512 hash cannot be validated, or the registration address is incorrect
-- The SHA-512 hash is a digital fingerprint of a document. Any change in the document will change the hash value. If the hash cannot be validated on DigitalOwnership, then the received document is different from the logged one. Ask if the original owner sends you the original, verifyable document. They should be able to provide it, otherwise someone else is claiming to be the sender; and that is exactly what the original sender wanted to protect you against.
-- DigitalOwnership can only link one wallet address to a certain SHA-512 hash. If the hash of a received document matches an address that does not belong to the original owner, then the original owner should be able to show that they own that address as well. 
+- Tip: Keep DigitalOwnership-logged files in a write-protected folder named after your wallet address.
+- Tip: Share with care. Register your valuable original creations and innovartions before you distribute content to others. This can be done in any stage of the process.
+- Tip: If you intend to share content, make the wallet address that you use for DigitalOwnership registrations is public. This way, your ownership address can be easily linked to the correct individual or organization. 
+- You may also choose to not reveal your address, if you intend to prove the origin and existence of your work at a later timepoint. 
 - Owners should be transparent regarding the address they use to register SHA-512 hashes.
 	- Ways to achieve this are:
 		- Including their wallet address inside the shared documents
-		- Publishing their wallet address in the  public domain 
-		- Verifying their wallet address 
+		- Publishing their wallet address in the  public domain (website, channels)
+
+## What to do when the SHA-512 hash cannot be validated, or the registration address is incorrect
+- The SHA-512 hash is a digital fingerprint of a document. Any change in the document will change the hash value. If the hash cannot be validated on DigitalOwnership, then the received document is different from the registered one. Ask the sender to send you the original, verifyable document. They should be able to provide it, otherwise someone else is claiming to be the sender; and that is exactly what the original sender wanted to protect you against.
+- DigitalOwnership can only link one wallet address to a certain SHA-512 hash. If the hash of a received document matches an unknown address, then the original owner should be able to show that they own this address as well, or re-register the same document under the known address.
 
 ## Challenges of the hash registration approach
-- A SHA-512 hash does not contain any interpretable information about the document it describes. Therefore, DigitalOwnership cannot be used a knowledge repository
-- Similar content produces different SHA-512 hashes. Due dilligence might be required in certain cases.
-- There is no limit on changing ownership. Those who take over ownership via DigitalOwnership should always validate that the first registered address belongs to the original content creator.
+- A SHA-512 hash does not contain any interpretable information about the document it describes. It is only an abstract representation.
+- Due dilligence might be required in certain cases. Those who take over document ownership via DigitalOwnership should always validate that the first registered address belongs to the original content creator.
 
 ## A note on patents and trademarks
 Patents and trademarks require originality and therefore the IP related to patent and trademark registrations should not be available in the public domain before such a status has been granted. DigitalOwnership is primarily aimed at content and ownership validation of shared documents; it does and cannot provide patent or trademark status to documents, since such a status is legally provided by regional and international regulations and requirements. 
-The position of blockchain in patent and trademark registration is a developing field and it is therefore unclear if DigitalOwnership-registered hashes can play a role in it. Time-stamped registration of SHA-512 hashes have the potential to add value in this process, for those who need to provide evidence for the moment of conception of an original idea to get an appliction granted; or for those who try to avoid the exploitation of their own IP by others.  
+The position of blockchain technology in patent and trademark registration is evolving and it is yet unclear if DigitalOwnership-registered hashes can play a role in it. Time-stamped registration of SHA-512 hashes have the potential to add value in this process, for those who need to provide evidence for the moment of conception of an original idea to get an appliction granted; or for those who try to avoid the exploitation of their own IP by others.  
 
 
 ## Project key characteristics
 
 ### DigitalOwnership
-1. DigitalOwnership () is owned by .
+1. DigitalOwnership (0x33Df9e002Ae0cc01a89ab4F08d130d0549F09ffB) is owned by 0x4a845E3Af338Ec8ae3696a4f6cB786bCF0688a08.
 
 
 ### DigitalOwnership smart contract ownership
@@ -132,11 +131,13 @@ DigitalOwnership.connect(YOUR-ADDRESS).setDO(SHA-512);
 ```
       
 #### create offer to sell it    
+
 ```
 DigitalOwnership.connect(YOUR-ADDRESS).sellerCreatesSalesIntent(SHA-512, BUYER-ADDRESS);
 ```
 
 #### buyer buys on approval, or directly with IPT credit
+
 ```
 DigitalOwnership.connect(BUYER-ADDRESS).buyerBuysDO(SHA-512);
 ```
